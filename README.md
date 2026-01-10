@@ -1,55 +1,84 @@
-# CricBuzzMovie
+# CricBuzzMovie 🎬
 
-🎬 Movie App (TMDb)
+## Movie App (TMDb)
 
-A modern iOS application built using Swift & SwiftUI that integrates with The Movie Database (TMDb) API to display popular movies, detailed information, trailers, search, and favorites.
+A modern iOS application built using **Swift & SwiftUI** that integrates with **The Movie Database (TMDb) API** to display popular movies, detailed information, trailers, search, and favorites.
 
 This project demonstrates clean architecture, API integration, pagination, and real-world media playback handling.
 
-📱 App Features
+---
 
-🎞 Popular Movies List
+## 📱 App Features
 
-Fetches and displays popular movies from TMDb
+### 🎞 Popular Movies List
+- Fetches and displays popular movies from TMDb  
+- Pagination support for seamless scrolling  
 
-Pagination support for seamless scrolling
+### 🔍 Search Movies
+- Search movies by title using TMDb Search API  
+- Real-time results with optimized API calls  
 
-🔍 Search Movies
+### ❤️ Favorites
+- Add or remove movies from favorites  
+- Favorites accessible via a dedicated tab  
 
-Search movies by title using TMDb search API
+### 📄 Movie Detail View
+- Displays movie overview, poster, rating, release date, and more  
+- Clean and user-friendly UI  
 
-Real-time results with optimized API calls
+### ▶️ Play Trailer
+- Watch official movie trailers  
+- Uses **SFSafariViewController** for reliable YouTube playback  
 
-❤️ Favorites
+### 🧭 Tab Bar Navigation
+- **Home** – Movies list  
+- **Favorites** – Saved movies  
 
-Add/remove movies to favorites
+---
 
-Favorites accessible via a dedicated tab
+## 📸 Screenshots
 
-📄 Movie Detail View
+<img width="1206" height="2622" alt="Home Screen" src="https://github.com/user-attachments/assets/846d5328-2980-4677-ab23-23ad6d950bf5" />
 
-Displays movie overview, poster, rating, release date, and more
+<img width="1206" height="2622" alt="Detail Screen" src="https://github.com/user-attachments/assets/ae6b085d-e245-447d-84f9-3c478d257b6b" />
 
-Clean and user-friendly UI
+---
 
-▶️ Play Trailer
+## ⚠️ YouTube Playback Note
 
-Watch official movie trailers
+YouTube does **not officially guarantee playback stability** when embedded inside `WKWebView`.
 
-Uses SFSafariViewController for reliable YouTube playback
+For **100% compliance, reliability, and App Store safety**, this app uses  
+**`SFSafariViewController`** for trailer playback, as recommended by Apple.
 
-🧭 Tab Bar Navigation
+---
 
-Home (Movies)
+## 🛠 Tech Stack
+- **Language:** Swift  
+- **UI:** SwiftUI  
+- **Architecture:** MVVM  
+- **Networking:** URLSession  
+- **API:** The Movie Database (TMDb)  
+- **Media Playback:** SFSafariViewController  
 
-Favorites
-<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-01-10 at 12 31 15" src="https://github.com/user-attachments/assets/846d5328-2980-4677-ab23-23ad6d950bf5" />
-<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-01-10 at 12 31 10" src="https://github.com/user-attachments/assets/ae6b085d-e245-447d-84f9-3c478d257b6b" />
+---
 
+## 🎯 Task – Movie App (TMDb)
 
+Build a simple iOS app that integrates with the TMDb API to:
+- Display popular movies  
+- Show detailed movie information  
+- Play trailers  
+- Support search functionality  
+- Allow users to favorite movies  
 
-⚠️ YouTube Playback Note
+---
 
-YouTube does not officially guarantee playback stability when embedded inside WKWebView.
-For 100% compliance, reliability, and App Store safety, this app uses
-SFSafariViewController for trailer playback, as recommended by Apple.
+## 🚀 Purpose
+
+This project is created to demonstrate:
+- API integration with pagination  
+- SwiftUI navigation and state management  
+- Search implementation  
+- Favorites handling  
+- Best practices for third-party media playback
